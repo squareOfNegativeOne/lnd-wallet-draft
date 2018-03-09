@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "build": "webpack --config webpack.config.dev.js",
-    "buildDev": "webpack --config webpack.config.dev.js",
-    "prestart": "yarn run build",
+    "build": "webpack --mode production --config webpack.config.prod.js",
+    "buildDev": "webpack --mode development --config webpack.config.dev.js",
+    "prestart": "npm run buildDev",
     "start": "electron ./dist/main.js --enable-logging"
   },
   "name": "lnd-wallet-draft",
