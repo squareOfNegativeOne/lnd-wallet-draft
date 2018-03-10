@@ -1,1 +1,97 @@
-!function(n){var e={};function c(o){if(e[o])return e[o].exports;var l=e[o]={i:o,l:!1,exports:{}};return n[o].call(l.exports,l,l.exports,c),l.l=!0,l.exports}c.m=n,c.c=e,c.d=function(n,e,o){c.o(n,e)||Object.defineProperty(n,e,{configurable:!1,enumerable:!0,get:o})},c.r=function(n){Object.defineProperty(n,"__esModule",{value:!0})},c.n=function(n){var e=n&&n.__esModule?function(){return n.default}:function(){return n};return c.d(e,"a",e),e},c.o=function(n,e){return Object.prototype.hasOwnProperty.call(n,e)},c.p="",c(c.s=1)}([function(module,exports){eval('module.exports = require("electron");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9leHRlcm5hbCBcImVsZWN0cm9uXCI/MDRmMyJdLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJlbGVjdHJvblwiKTsiXSwibWFwcGluZ3MiOiJBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///0\n')},function(module,exports,__webpack_require__){"use strict";eval("\n\nvar _electron = __webpack_require__(0);\n\nlet mainWindow;\nfunction onReady() {\n    mainWindow = new _electron.BrowserWindow({\n        width: 800,\n        height: 600\n    });\n    const fileName = `file://${__dirname}/index.html`;\n    console.log('filename - ' + fileName);\n    mainWindow.loadURL(fileName);\n    mainWindow.on('close', () => _electron.app.quit());\n}\n_electron.app.on('ready', () => onReady());\n_electron.app.on('window-all-closed', () => _electron.app.quit());\nconsole.log(`Electron Version ${_electron.app.getVersion()}`);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9tYWluLnRzP2I3NjciXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgYXBwLCBCcm93c2VyV2luZG93IH0gZnJvbSAnZWxlY3Ryb24nXG5kZWNsYXJlIHZhciBfX2Rpcm5hbWU6IHN0cmluZ1xubGV0IG1haW5XaW5kb3c6IEVsZWN0cm9uLkJyb3dzZXJXaW5kb3dcblxuZnVuY3Rpb24gb25SZWFkeSgpIHtcbiAgbWFpbldpbmRvdyA9IG5ldyBCcm93c2VyV2luZG93KHtcbiAgICB3aWR0aDogODAwLFxuICAgIGhlaWdodDogNjAwXG4gIH0pXG5cbiAgY29uc3QgZmlsZU5hbWUgPSBgZmlsZTovLyR7X19kaXJuYW1lfS9pbmRleC5odG1sYFxuICBjb25zb2xlLmxvZygnZmlsZW5hbWUgLSAnICsgZmlsZU5hbWUpXG4gIG1haW5XaW5kb3cubG9hZFVSTChmaWxlTmFtZSlcbiAgbWFpbldpbmRvdy5vbignY2xvc2UnLCAoKSA9PiBhcHAucXVpdCgpKVxufVxuXG5hcHAub24oJ3JlYWR5JywgKCkgPT4gb25SZWFkeSgpKVxuYXBwLm9uKCd3aW5kb3ctYWxsLWNsb3NlZCcsICgpID0+IGFwcC5xdWl0KCkpXG5jb25zb2xlLmxvZyhgRWxlY3Ryb24gVmVyc2lvbiAke2FwcC5nZXRWZXJzaW9uKCl9YClcbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUZBO0FBS0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///1\n")}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.ts");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _electron = __webpack_require__(/*! electron */ \"electron\");\n\nlet mainWindow;\nfunction onReady() {\n    mainWindow = new _electron.BrowserWindow({\n        height: 600,\n        width: 800\n    });\n    const fileName = `file://${__dirname}/index.html`;\n    console.log('filename - ' + fileName);\n    mainWindow.loadURL(fileName);\n    mainWindow.on('close', () => _electron.app.quit());\n}\n_electron.app.on('ready', () => onReady());\n_electron.app.on('window-all-closed', () => _electron.app.quit());\nconsole.log(`Electron Version ${_electron.app.getVersion()}`);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvbWFpbi50cy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9tYWluLnRzP2I3NjciXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgYXBwLCBCcm93c2VyV2luZG93IH0gZnJvbSAnZWxlY3Ryb24nXG5cbi8qIHRzbGludDpkaXNhYmxlOm5vLWNvbnNvbGUgKi9cblxuZGVjbGFyZSB2YXIgX19kaXJuYW1lOiBzdHJpbmdcbmxldCBtYWluV2luZG93OiBFbGVjdHJvbi5Ccm93c2VyV2luZG93XG5cbmZ1bmN0aW9uIG9uUmVhZHkoKSB7XG4gIG1haW5XaW5kb3cgPSBuZXcgQnJvd3NlcldpbmRvdyh7XG4gICAgaGVpZ2h0OiA2MDAsXG4gICAgd2lkdGg6IDgwMCxcbiAgfSlcblxuICBjb25zdCBmaWxlTmFtZSA9IGBmaWxlOi8vJHtfX2Rpcm5hbWV9L2luZGV4Lmh0bWxgXG4gIGNvbnNvbGUubG9nKCdmaWxlbmFtZSAtICcgKyBmaWxlTmFtZSlcbiAgbWFpbldpbmRvdy5sb2FkVVJMKGZpbGVOYW1lKVxuICBtYWluV2luZG93Lm9uKCdjbG9zZScsICgpID0+IGFwcC5xdWl0KCkpXG59XG5cbmFwcC5vbigncmVhZHknLCAoKSA9PiBvblJlYWR5KCkpXG5hcHAub24oJ3dpbmRvdy1hbGwtY2xvc2VkJywgKCkgPT4gYXBwLnF1aXQoKSlcbmNvbnNvbGUubG9nKGBFbGVjdHJvbiBWZXJzaW9uICR7YXBwLmdldFZlcnNpb24oKX1gKVxuIl0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFJQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBRkE7QUFLQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/main.ts\n");
+
+/***/ }),
+
+/***/ "electron":
+/*!***************************!*\
+  !*** external "electron" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"electron\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZWxlY3Ryb24uanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJlbGVjdHJvblwiPzA0ZjMiXSwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiZWxlY3Ryb25cIik7Il0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///electron\n");
+
+/***/ })
+
+/******/ });

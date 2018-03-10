@@ -1,11 +1,14 @@
 import { app, BrowserWindow } from 'electron'
+
+/* tslint:disable:no-console */
+
 declare var __dirname: string
 let mainWindow: Electron.BrowserWindow
 
 function onReady() {
   mainWindow = new BrowserWindow({
+    height: 600,
     width: 800,
-    height: 600
   })
 
   const fileName = `file://${__dirname}/index.html`
