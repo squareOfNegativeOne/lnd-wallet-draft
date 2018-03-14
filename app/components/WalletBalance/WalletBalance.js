@@ -1,15 +1,16 @@
 // @flow
 import React, { Component } from 'react';
-import Home from '../components/Home/Home';
 
 type Props = {};
 
-export default class HomePage extends Component<Props> {
+export default class WalletBalance extends Component<Props> {
   props: Props;
 
   render() {
     return (
-      <Home />
+      <div>
+        <h2>Wallet Balance</h2>
+      </div>
     );
   }
 }
