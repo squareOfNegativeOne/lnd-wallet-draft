@@ -11,8 +11,11 @@
   },
   "scripts": {
     "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
-    "postinstall": "npm run electron-rebuild"
+    "postinstall": "npm run electron-rebuild",
+    "install-grpc": "cd node_modules/grpc && git submodule update --init && npm run electron-build -- --target=1.6.16"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "grpc": "1.7.1"
+  }
 }

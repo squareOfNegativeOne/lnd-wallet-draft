@@ -8,8 +8,8 @@ import WalletBalancePage from './containers/WalletBalancePage';
 export default () => (
   <App>
     <Switch>
-      <Route path="/walletbalance" component={WalletBalancePage} />
       <Route path="/" component={HomePage} />
+      <Route path="/walletbalance" component={WalletBalancePage} />
     </Switch>
   </App>
 );
