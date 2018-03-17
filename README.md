@@ -30,11 +30,13 @@ sudo apt-get install node-gyp
 ```
 cd /home/YOUR-USERNAME/dev/src/github.com/squareOfNegativeOne/lnd-wallet-draft
 sudo npm install
-sudo npm install install-grpc
+sudo npm run install-grpc
 npm run dev
 ```
 
 ### Install lnd-wallet-draft workaround. If you get an EACES error during npm install
+```
 sudo npm install --unsafe-perm=true
-sudo npm install install-grpc
+sudo npm run install-grpc
 npm run dev
+```
